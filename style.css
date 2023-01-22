@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightyellow;
+    margin:0;
+    padding:0;
+}
+
+.keys{
+    display:flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.key{
+    display:flex;
+    flex-direction: column;
+}
+
+.key>*{
+    height:3.5em;
+    width:3.5em;
+    margin:1em 2em;
+    border-radius:25%;
+}

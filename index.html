@@ -10,18 +10,27 @@
 </head>
 <body>
     <div class="keys">
-        <div class="key">
+        <div data-key="72" class="key">
             <button><kbd>H</kbd></button>
+            <span> Hi-Hat</span>
         </div>
-        <div class="key">
-            <button><kbd>Z</kbd></button>
+        <div data-key="90" class="key">
+            <button><kdb>Z</kdb></button>
+            <span>Kick</span>
         </div>
-        <div class="key">
-            <button><kbd>X</kbd></button>
+        <div data-key="88" class="key">
+            <button><kdb>X</kdb></button>
+            <span>Snare</span>
         </div>
-        <div class="key">
-            <button><kbd>V</kbd></button>
+        <div data-key="86" class="key">
+            <button class="nothing"><kdb>V</kdb></button>
+            <span>Open Hi-Hat</span>
         </div>
     </div>
+
+    <audio data-key="72" src="./audio/TIGHT_HH.wav"></audio>
+    <audio data-key="86" src="./audio/TIGHT_OPEN HH.wav"></audio>
+    <audio data-key="88" src="./audio/TIGHT_SNARE.wav"></audio>
+    <audio data-key="90" src="./audio/TIGHT_KICK.wav"></audio>
 </body>
 </html>
