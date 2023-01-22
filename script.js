@@ -11,6 +11,8 @@ const buttons=document.querySelectorAll('button');
 buttons.forEach(buttonKey=>{
     buttonKey.addEventListener("click",()=>{
         const dataKeyCode=buttonKey.dataset['key'];
-        console.log(dataKeyCode);
+        const audio=document.querySelector(`audio[data-key="${dataKeyCode}"]`);
+        audio.currentTime=0.01;
+        audio.play();
     })
 })
