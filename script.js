@@ -1,6 +1,16 @@
 window.addEventListener('keydown',function(e){
     const key=document.querySelector(`div[data-key="${e.keyCode}"]`);
+    console.log(button);
     const audio=document.querySelector(`audio[data-key="${e.keyCode}"]`);
     audio.currentTime=0.01;
     audio.play();
+})
+
+const buttons=document.querySelectorAll('button');
+
+buttons.forEach(buttonKey=>{
+    buttonKey.addEventListener("click",()=>{
+        const dataKeyCode=buttonKey.dataset['key'];
+        console.log(dataKeyCode);
+    })
 })
