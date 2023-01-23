@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: #13294B;
+    background-color: #0b1a30;
     margin:0;
     padding:0;
 }
@@ -35,11 +35,11 @@ kbd{
 
 button{
     transform:scale(1.5);
-    box-shadow: 5px 2.5px 5px red;
-    transition: all 0.07s;
+    box-shadow: 5px 5px 500px red;
+    transition: all 0.15s;
 }
 
 .playing{
     transform:scale(1);
-    box-shadow: 3.5px 1px 3.5px pink;
+    box-shadow: 0px 0px 0px yellow;
 }

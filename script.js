@@ -1,7 +1,10 @@
 window.addEventListener('keydown',function(e){
     const key=document.querySelector(`div[data-key="${e.keyCode}"]`);
     const audio=document.querySelector(`audio[data-key="${e.keyCode}"]`);
-    audio.currentTime=0.01;
+    const buttonKey=document.querySelector(`button[data-key="${e.keyCode}"]`);
+    buttonKey.classList.add('playing');
+    buttonKey.addEventListener('transitionend',()=>buttonKey.classList.remove('playing'));
+    audio.currentTime=0;
     audio.play();
 });
 
