@@ -1,9 +1,10 @@
 *{
     box-sizing: border-box;
+    color: #c0c0c0;
 }
 
 body{
-    background-color: lightyellow;
+    background-color: #13294B;
     margin:0;
     padding:0;
 }
@@ -21,8 +22,24 @@ body{
 }
 
 .key>*{
-    height:3.5em;
-    width:3.5em;
+    height:5em;
+    width:5em;
     margin:1em 2em;
     border-radius:25%;
+}
+
+kbd{
+    color:black;
+    font-size:2em;
+}
+
+button{
+    transform:scale(1.5);
+    box-shadow: 5px 2.5px 5px red;
+    transition: all 0.07s;
+}
+
+.playing{
+    transform:scale(1);
+    box-shadow: 3.5px 1px 3.5px pink;
 }
