@@ -35,11 +35,11 @@ kbd{
 
 button{
     transform:scale(1.5);
-    box-shadow: 5px 5px 500px red;
-    transition: all 0.15s;
+    box-shadow: 5px 5px 1000px red;
+    transition: all 0.07s;
 }
 
 .playing{
     transform:scale(1);
-    box-shadow: 0px 0px 0px yellow;
+    box-shadow: 0px 0px 100px rgb(255, 242, 0);
 }
